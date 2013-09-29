@@ -1,0 +1,7 @@
+-r local.txt
+bugjar
+cricket
+docformatter
+duvet
+flake8
+pylint
