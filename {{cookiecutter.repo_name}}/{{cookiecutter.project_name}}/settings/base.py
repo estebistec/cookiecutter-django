@@ -63,10 +63,13 @@ SECRET_KEY = get_env_variable('DJANGO_SECRET_KEY')
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
-    'django.template.loaders.filesystem.Loader',
-    'django.template.loaders.app_directories.Loader',
-#     'django.template.loaders.eggs.Loader',
+    'django_jinja.loaders.AppLoader',
+    'django_jinja.loaders.FileSystemLoader',
 )
+
+DEFAULT_JINJA2_TEMPLATE_INTERCEPT_RE = r"^(?!(admin/|debug_toolbar/)).*"
+JINJA2_AUTOESCAPE = True
+JINJA2_BYTECODE_CACHE_ENABLE = True
 
 MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
@@ -91,6 +94,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
 
+    'django_jinja',
     'south',
 )
 
