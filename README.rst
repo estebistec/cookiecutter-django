@@ -31,8 +31,13 @@ Django setup
 - no user media settings
 - local: django-debug-toolbar enabled
 - local: streaming console logging enabled
+
+Django add-ons
+~~~~~~~~~~~~~~
+
 - South
-- Jinja for templates
+- Jinja for templates via django-jinja
+- dj-static
 
 Development tools
 ~~~~~~~~~~~~~~~~~

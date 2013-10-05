@@ -57,6 +57,8 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
+STATIC_ROOT = PROJECT_ROOT.child('staticfiles')
+STATIC_URL = '/static/'
 
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = get_env_variable('DJANGO_SECRET_KEY')
