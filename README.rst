@@ -7,6 +7,12 @@ using the django startproject command and then massaged into the layout prescrib
 
 This template will evolve from there, but this seems like a pretty good start
 
+Usage
+-----
+::
+
+    cookiecutter git@github.com:estebistec/cookiecutter-django.git
+
 Project features
 ----------------
 
