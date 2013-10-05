@@ -15,24 +15,8 @@ Deployment
 
 TODO
 
-Environments
-------------
+Environment variables
+---------------------
 
-PostgreSQL is the storage used in all environments.
-
-base
-~~~~
-
-**Environment variables**
-
-- **``DJANGO_SECRET_KEY``**
-
-local
-~~~~~
-
-Expects a PostgreSQL database of the same name as the project.
-
-**Environment variables**
-
-- **``PGUSER``** - PostgreSQL user; **default**: current OS user
-- **``PGPASS``** - PostgreSQL password; **default**: ``''``
+- **``SECRET_KEY``**
+- **``DATABASE_URL``**

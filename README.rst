@@ -38,6 +38,7 @@ Django add-ons
 - South
 - Jinja for templates via django-jinja
 - dj-static
+- dj-database-url
 
 Development tools
 ~~~~~~~~~~~~~~~~~

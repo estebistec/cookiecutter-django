@@ -9,17 +9,6 @@ from .base import *
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': '{{cookiecutter.project_name}}',
-        'USER': os.environ.setdefault('PGUSER', os.environ['USER']),
-        'PASSWORD': os.environ.setdefault('PGPASS', ''),
-        'HOST': '',
-        'PORT': '',
-    }
-}
-
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
 ALLOWED_HOSTS = []

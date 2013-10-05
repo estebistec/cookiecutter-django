@@ -4,6 +4,7 @@
 
 import os
 
+import dj_database_url
 from django.core.exceptions import ImproperlyConfigured
 from unipath import Path
 
@@ -28,6 +29,10 @@ ADMINS = (
 )
 
 MANAGERS = ADMINS
+
+# Make this unique, and don't share it with anybody.
+SECRET_KEY = get_env_variable('SECRET_KEY')
+DATABASES = {'default': dj_database_url.config(default=get_env_variable('DATABASE_URL'))}
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -60,9 +65,6 @@ STATICFILES_FINDERS = (
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.CachedStaticFilesStorage'
 STATIC_ROOT = PROJECT_ROOT.child('staticfiles')
 STATIC_URL = '/static/'
-
-# Make this unique, and don't share it with anybody.
-SECRET_KEY = get_env_variable('DJANGO_SECRET_KEY')
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
