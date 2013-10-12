@@ -52,6 +52,7 @@ Development tools
 Note that these dependencies (see requirements/local.txt) are not pinned. The idea here is to
 always take the latest releases for tools as they don't affect the project run-time.
 
+* pip-tools
 * flake8
 * docformatter
 * pylint
