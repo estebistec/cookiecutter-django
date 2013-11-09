@@ -40,6 +40,9 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'south',
+    'django_jinja',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -49,9 +52,6 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-
-    'south',
-    'django_jinja',
 )
 
 ROOT_URLCONF = '{{cookiecutter.project_name}}.urls'
