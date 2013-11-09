@@ -1,19 +1,28 @@
 # -*- coding: utf-8 -*-
+"""
+Django quick-start development settings for {{cookiecutter.project_name}} project.
 
+"""
 
-import os
 
 from .base import *
 
 
+# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-TEMPLATE_DEBUG = DEBUG
+TEMPLATE_DEBUG = True
 
-# Hosts/domain names that are valid for this site; required if DEBUG is False
-# See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
+
 ALLOWED_HOSTS = []
 
+
+# Email console backend for development
+# https://docs.djangoproject.com/en/1.6/topics/email/
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+
+# Logging
+# https://docs.djangoproject.com/en/1.6/topics/logging/
 
 LOGGING = {
     'version': 1,
@@ -33,10 +42,13 @@ LOGGING = {
     }
 }
 
-INSTALLED_APPS += ('debug_toolbar', )
-MIDDLEWARE_CLASSES += ('debug_toolbar.middleware.DebugToolbarMiddleware', )
-INTERNAL_IPS = ('127.0.0.1', )
 
+# Django Debug Toolbar
+# http://django-debug-toolbar.readthedocs.org/
+
+INSTALLED_APPS += ('debug_toolbar',)
+MIDDLEWARE_CLASSES += ( 'debug_toolbar.middleware.DebugToolbarMiddleware',)
+INTERNAL_IPS = ('127.0.0.1',)
 DEBUG_TOOLBAR_CONFIG = {
     'INTERCEPT_REDIRECTS': False
 }
