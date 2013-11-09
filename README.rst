@@ -1,9 +1,9 @@
 cookiecutter-django
 ===================
 
-A cookiecutter template for Django websites. This is a very basic django project layout, started
-using the django startproject command and then massaged into the layout prescribed by the book
-`Two Scoops of Django <https://django.2scoops.org>`_.
+A `cookiecutter <http://cookiecutter.readthedocs.org/>`_ template for Django websites. This is a
+very basic django project layout, started using the django startproject command and then massaged
+into the layout prescribed by the book `Two Scoops of Django <https://django.2scoops.org>`_.
 
 Usage
 -----
