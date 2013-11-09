@@ -16,6 +16,7 @@ Then review the files in your new project to:
 - **(optional)** choose a license for your project different from the default (MIT)
 - Further describe and document your project
 - Get started with installing and running your project
+- Start building your site!
 
 Django features and runtime
 ---------------------------
