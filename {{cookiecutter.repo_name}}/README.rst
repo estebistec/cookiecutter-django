@@ -65,4 +65,14 @@ Heroku
 
 - Email settings. See: https://docs.djangoproject.com/en/1.6/topics/email/
 - Logging settings. See: https://docs.djangoproject.com/en/1.6/topics/logging/
+- Create requirements.txt in the repo-root that references `requirements/heroku.txt`
 - Define a procfile and deploy! See: https://devcenter.heroku.com/articles/getting-started-with-django
+- Don't forget your secret: `heroku config:add SECRET_KEY=s3cr3t` (of course, use a good value)
+
+Example `Profile`::
+
+    web: gunicorn {{cookiecutter.project_name}}.wsgi.heroku
+
+Example `requirements.txt`::
+
+    -r requirements/heroku.txt
