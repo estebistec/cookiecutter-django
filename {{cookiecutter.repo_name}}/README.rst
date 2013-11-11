@@ -35,8 +35,8 @@ Deployment environments may have further components, such as a Procfile and WSGI
 Development (local)
 ~~~~~~~~~~~~~~~~~~~
 
-- **requirements**: `requirements/dev.txt`
-- **settings**: `{{cookiecutter.project_name}}.settings.local`
+- **requirements**: ``requirements/dev.txt``
+- **settings**: ``{{cookiecutter.project_name}}.settings.local``
 
 **Tools**
 
@@ -57,7 +57,7 @@ Development (local)
 Heroku
 ~~~~~~
 
-- **requirements**: `requirements/heroku.txt`
+- **requirements**: ``requirements/heroku.txt``
 - **settings**: ``{{cookiecutter.project_name}}.settings.heroku``
 - **wsgi app**: ``{{cookiecutter.project_name}}.wsgi.heroku.application``
 
