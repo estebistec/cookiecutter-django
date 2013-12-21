@@ -69,7 +69,7 @@ Heroku
 - Define a procfile and deploy! See: https://devcenter.heroku.com/articles/getting-started-with-django
 - Don't forget your secret: ``heroku config:add SECRET_KEY=s3cr3t`` (of course, use a good value)
 
-Example `Profile`::
+Example `Procfile`::
 
     web: gunicorn {{cookiecutter.project_name}}.wsgi.heroku
 
