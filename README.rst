@@ -22,8 +22,6 @@ Django features and runtime
 ---------------------------
 
 - Django 1.6
-- psycopg2
-- PostgreSQL storage (tested against 9.3.0)
 - South
 - django-jinja
 - dj-static
