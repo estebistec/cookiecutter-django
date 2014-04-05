@@ -1,8 +1,8 @@
 Django==1.6.2
 Jinja2==2.7.2
-MarkupSafe==0.18
+MarkupSafe==0.19
 South==0.8.4
-dj-database-url==0.2.2
+dj-database-url==0.3.0
 dj-static==0.0.5
 django-jinja==0.23.1
 pystache==0.5.3
