@@ -23,7 +23,6 @@ Django features and runtime
 
 - Django 1.6
 - South
-- django-jinja
 - dj-static
 
 License

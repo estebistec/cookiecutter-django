@@ -42,7 +42,6 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
 
     'south',
-    'django_jinja',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -91,17 +90,3 @@ STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.CachedStaticFilesStorage'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-
-# Template processing using Jinja
-# https://docs.djangoproject.com/en/1.6/topics/templates/
-# https://django-jinja.readthedocs.org/en/latest/
-# http://jinja.pocoo.org/
-
-TEMPLATE_LOADERS = (
-    'django_jinja.loaders.AppLoader',
-    'django_jinja.loaders.FileSystemLoader',
-)
-
-DEFAULT_JINJA2_TEMPLATE_EXTENSION = '.jinja'
-JINJA2_AUTOESCAPE = True
-JINJA2_BYTECODE_CACHE_ENABLE = True
